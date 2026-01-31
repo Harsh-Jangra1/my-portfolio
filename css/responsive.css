@@ -1,0 +1,168 @@
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  :root {
+    --fs-4xl: 2.5rem;
+    --fs-3xl: 2rem;
+    --fs-2xl: 1.5rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Navbar */
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--bg-light);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg) 0;
+    gap: 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: var(--spacing-md);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    margin-top: 0;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .typing-text {
+    font-size: var(--fs-xl);
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline */
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 60px;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .timeline-marker {
+    left: 20px;
+  }
+
+  /* Contact */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-xxl: 2rem;
+    --spacing-xl: 1.5rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.75rem;
+    --fs-4xl: 2rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .section-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--fs-base);
+  }
+
+  .hero-buttons {
+    gap: var(--spacing-sm);
+  }
+
+  .btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--fs-xs);
+  }
+
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
