@@ -3,20 +3,22 @@
 A modern, fully responsive, and animated personal portfolio website built with pure HTML, CSS, and JavaScript. Showcasing skills, projects, and professional experience with a beautiful, recruiter-ready design.
 
 ## Table of Contents
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [How to Use](#how-to-use)
-- [Customization](#customization)
-- [GitHub Workflow](#github-workflow)
-- [Technologies Used](#technologies-used)
-- [Browser Support](#browser-support)
+
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation--setup)
+- [How to Use](#-how-to-use)
+- [Customization](#-customization)
+- [GitHub Workflow](#-github-workflow-guide)
+- [Technologies Used](#️technologies-used)
+- [Browser Support](#-browser-support)
 
 ---
 
 ## ✨ Features
 
 ### Design & User Experience
+
 - **Modern Gradient Design**: Professional gradient color schemes with glassmorphism effects
 - **Fully Responsive**: Works flawlessly on mobile, tablet, and desktop devices
 - **Smooth Animations**: CSS animations + JavaScript Intersection Observer for scroll reveals
@@ -26,6 +28,7 @@ A modern, fully responsive, and animated personal portfolio website built with p
 - **Accessible**: ARIA labels and semantic HTML for better accessibility
 
 ### Interactive Features
+
 - **Typed Text Animation**: Dynamic typing effect in hero section
 - **Animated Particles**: Floating background particles for visual depth
 - **Animated Skill Progress Bars**: Progress bars animate on scroll reveal
@@ -36,6 +39,7 @@ A modern, fully responsive, and animated personal portfolio website built with p
 - **Scroll-to-Top Button**: Quick return to top of page
 
 ### Sections Included
+
 1. **Hero Section**: Eye-catching introduction with typing animation
 2. **About Me**: Personal background and soft skills showcase
 3. **Skills Section**: 8+ technical skills with animated progress bars
@@ -48,7 +52,7 @@ A modern, fully responsive, and animated personal portfolio website built with p
 
 ## 📁 Project Structure
 
-```
+```plaintext
 harsh-portfolio/
 ├── index.html              # Main HTML file
 ├── css/
@@ -67,6 +71,7 @@ harsh-portfolio/
 ## 🚀 Installation & Setup
 
 ### Prerequisites
+
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - Git (for version control)
 - A code editor (VS Code recommended)
@@ -74,6 +79,7 @@ harsh-portfolio/
 ### Local Setup
 
 1. **Clone or Download the Repository**
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/harsh-portfolio.git
    cd harsh-portfolio
@@ -93,6 +99,7 @@ harsh-portfolio/
 ## 💻 How to Use
 
 ### Viewing the Portfolio
+
 1. Open `index.html` in your web browser
 2. Navigate through sections using the navbar
 3. Hover over projects to see details
@@ -102,6 +109,7 @@ harsh-portfolio/
 7. Download resume by clicking the resume button
 
 ### Mobile Usage
+
 1. Site is fully responsive on all screen sizes
 2. Hamburger menu appears on screens < 768px
 3. Touch-friendly buttons and links
@@ -117,50 +125,52 @@ harsh-portfolio/
 
 ```html
 <!-- Hero Section -->
-<h1 class="hero-title">Hi, I'm <span class="gradient-text">YOUR_NAME</span></h1>
+<h1 class="hero-title">Hi, I'm <span class="gradient-text">Harsh</span></h1>
 
 <!-- About Section -->
-<p class="about-intro">I'm YOUR_NAME, a BCA student...</p>
+<p class="about-intro">I'm Harsh</p>
 
 <!-- Contact Section -->
-<p><a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a></p>
-<p><a href="tel:+919XXXXXXXXXX">+91 9XXXXXXXXXX</a></p>
+<p><a href="mailto:harshjangra021@gmail.com">harshjangra021@gmail.com</a></p>
+<p><a href="tel:+919050293435">+91 9050293435</a></p>
 ```
 
 ### Update Skills
 
 Add/Remove skill cards in the Skills section:
+
 ```html
 <div class="skill-card">
-    <div class="skill-icon"><i class="fab fa-icon-name"></i></div>
-    <h3 class="skill-name">Skill Name</h3>
-    <div class="skill-progress">
-        <div class="progress-bar" style="width: 85%"></div>
-    </div>
-    <p class="skill-level">85%</p>
+  <div class="skill-icon"><i class="fab fa-icon-name"></i></div>
+  <h3 class="skill-name">HTML</h3>
+  <div class="skill-progress">
+    <div class="progress-bar" style="width: 85%"></div>
+  </div>
+  <p class="skill-level">85%</p>
 </div>
 ```
 
 ### Update Projects
 
 Modify project cards in Projects section:
+
 ```html
 <div class="project-card">
-    <div class="project-image">
-        <img src="your-image-url" alt="Project Name">
-        <div class="project-overlay">
-            <button class="btn-view" onclick="openProjectModal(this)">
-                <i class="fas fa-eye"></i> View Details
-            </button>
-        </div>
+  <div class="project-image">
+    <img src="your-image-url" alt="Project Name" />
+    <div class="project-overlay">
+      <button class="btn-view" onclick="openProjectModal(this)">
+        <i class="fas fa-eye"></i> View Details
+      </button>
     </div>
-    <div class="project-content">
-        <h3 class="project-title">Project Name</h3>
-        <p class="project-desc">Description...</p>
-        <div class="project-tags">
-            <span class="tag">Technology</span>
-        </div>
+  </div>
+  <div class="project-content">
+    <h3 class="project-title">Calculator</h3>
+    <p class="project-desc">Basic calculator</p>
+    <div class="project-tags">
+      <span class="tag">Technology</span>
     </div>
+  </div>
 </div>
 ```
 
@@ -169,22 +179,24 @@ Modify project cards in Projects section:
 **File: `css/style.css`**
 
 Modify the CSS variables:
+
 ```css
 :root {
-    --primary-color: #6c5ce7;      /* Main color */
-    --primary-light: #a29bfe;      /* Light variant */
-    --accent-color: #00b894;       /* Accent color */
-    --text-dark: #1a1a2e;          /* Text color */
-    --bg-light: #ffffff;           /* Background color */
+  --primary-color: #6c5ce7;
+  --primary-light: #a29bfe;
+  --accent-color: #00b894;
+  --text-dark: #1a1a2e;
+  --bg-light: #ffffff;
 }
 ```
 
 ### Update Social Links
 
 Find the social icons section and update links:
+
 ```html
-<a href="https://github.com/YOUR_USERNAME" target="_blank" class="social-icon">
-    <i class="fab fa-github"></i>
+<a href="https://github.com/Harsh-Jangra1" target="_blank" class="social-icon">
+  <i class="fab fa-github"></i>
 </a>
 ```
 
@@ -192,9 +204,10 @@ Find the social icons section and update links:
 
 1. Place your resume PDF in `assets/` folder
 2. Update the download link in HTML:
+
    ```html
    <a href="assets/your-resume.pdf" class="btn btn-outline" download>
-       <i class="fas fa-download"></i> Resume
+     <i class="fas fa-download"></i> Resume
    </a>
    ```
 
@@ -211,47 +224,55 @@ Find the social icons section and update links:
    - Don't add README/gitignore yet
 
 2. **Initialize Git Locally**
+
    ```bash
    cd harsh-portfolio
    git init
    ```
 
 3. **Add All Files**
+
    ```bash
    git add .
    ```
 
 4. **Create First Commit**
+
    ```bash
    git commit -m "Initial portfolio website - HTML CSS JS"
    ```
 
 5. **Add Remote Repository**
+
    ```bash
    git branch -M main
    git remote add origin https://github.com/YOUR_USERNAME/harsh-portfolio.git
    ```
 
 6. **Push to GitHub**
+
    ```bash
    git push -u origin main
    ```
 
 ### Regular Updates
 
-#### After Making Changes:
+#### After Making Changes
 
 1. **Check Status**
+
    ```bash
    git status
    ```
 
 2. **Add Changes**
+
    ```bash
    git add .
    ```
 
 3. **Commit Changes**
+
    ```bash
    git commit -m "Updated portfolio - [describe changes]"
    ```
@@ -263,12 +284,15 @@ Find the social icons section and update links:
    - `git commit -m "Fixed dark mode toggle"`
 
 4. **Push to GitHub**
+
    ```bash
    git push
    ```
 
 ### Sample Commit Messages
-```
+
+```bash
+
 - "Added new project card - E-commerce Store"
 - "Updated About section with achievements"
 - "Improved mobile navigation"
@@ -285,23 +309,26 @@ Find the social icons section and update links:
 3. Select branch: `main`
 4. Select folder: `/(root)`
 5. Click Save
-6. Your site will be live at: `https://YOUR_USERNAME.github.io/harsh-portfolio`
+6. Your site will be live at: `https://frontend-dev-harsh.web.app`
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️Technologies Used
 
 ### Frontend
+
 - **HTML5**: Semantic markup and accessibility
 - **CSS3**: Modern styling with variables, grid, flexbox
 - **JavaScript (Vanilla)**: No frameworks, pure JS for interactivity
 
 ### Libraries & Resources
+
 - **Font Awesome**: Icon library (6.4.0)
 - **Google Fonts**: Poppins & Playfair Display
 - **Intersection Observer API**: For scroll animations
 
 ### Key Features
+
 - Pure CSS animations (no external animation libraries)
 - Vanilla JavaScript (no jQuery or frameworks)
 - Responsive design (Mobile-first approach)
@@ -311,12 +338,12 @@ Find the social icons section and update links:
 
 ## 📱 Browser Support
 
-| Browser | Version | Support |
-|---------|---------|---------|
-| Chrome  | Latest  | ✅ Full |
-| Firefox | Latest  | ✅ Full |
-| Safari  | Latest  | ✅ Full |
-| Edge    | Latest  | ✅ Full |
+| Browser | Version | Support          |
+| ------- | ------- | ---------------- |
+| Chrome  | Latest  | ✅ Full          |
+| Firefox | Latest  | ✅ Full          |
+| Safari  | Latest  | ✅ Full          |
+| Edge    | Latest  | ✅ Full          |
 | IE 11   | -       | ❌ Not Supported |
 
 ---
@@ -324,12 +351,14 @@ Find the social icons section and update links:
 ## 🎯 Best Practices Implemented
 
 ### Performance
+
 - Optimized CSS and minimal JavaScript
 - Lazy loading for images (optional)
 - Efficient animation using CSS transforms
 - No external frameworks for faster loading
 
 ### Accessibility
+
 - Semantic HTML structure
 - ARIA labels for interactive elements
 - Keyboard navigation support
@@ -337,21 +366,24 @@ Find the social icons section and update links:
 - Form validation and error messages
 
 ### SEO
+
 - Proper meta tags in HTML head
 - Semantic heading structure
 - Image alt text
 - Structured content
 
 ### Security
+
 - No external API calls
 - Client-side form handling
-- Safe link opening with target="_blank"
+- Safe link opening with target="\_blank"
 
 ---
 
 ## 🚧 Future Enhancements
 
 Consider adding:
+
 - Blog section with articles
 - Client testimonials carousel
 - Skills filter for projects
@@ -365,7 +397,7 @@ Consider adding:
 
 ## 📧 Contact & Support
 
-- **Email**: harshjangra021@gmail.com
+- **Email**: <harshjangra021@gmail.com>
 - **Phone**: +91 9050293435
 - **Location**: Jhajjar, Haryana, India
 - **GitHub**: [Your GitHub Profile]
@@ -398,6 +430,7 @@ This project is open source and available under the MIT License.
 ## 🎓 Learning Resources
 
 Learn more about web development:
+
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [CSS Tricks](https://css-tricks.com/)
 - [JavaScript.info](https://javascript.info/)
@@ -408,6 +441,7 @@ Learn more about web development:
 ## 🌟 Show Your Support
 
 If you found this portfolio template helpful:
+
 - ⭐ Star the repository
 - 🍴 Fork and customize for yourself
 - 📢 Share with your network
@@ -417,27 +451,10 @@ If you found this portfolio template helpful:
 
 Made with ❤️ by Harsh | BCA Student at Jagannath University
 
-## 🛠️ Technology Stack
-
-### Frontend
-- **HTML5**: Semantic markup, BEM naming convention, accessibility attributes
-- **CSS3**: CSS Variables, Flexbox/Grid layouts, advanced animations
-- **JavaScript (Vanilla)**: ES6+, no dependencies, Intersection Observer API
-
-### Libraries & Resources
-- **Font Awesome**: Icon library (6.4.0)
-- **Google Fonts**: Poppins & Playfair Display
-- **Typed.js**: Typewriter effect animation
-
-### Key Features
-- Pure CSS animations (no external animation libraries)
-- Vanilla JavaScript (no jQuery or frameworks)
-- Responsive design (Mobile-first approach)
-- Local storage support for theme persistence
-
 ## 🎬 Animations & Effects
 
 ### CSS Animations
+
 - **slideInLeft/Right**: Hero section entrance
 - **fadeInUp**: Sections reveal on scroll
 - **progressBar**: Skill bars animate to percentage
@@ -446,6 +463,7 @@ Made with ❤️ by Harsh | BCA Student at Jagannath University
 - **float**: Floating particle effects
 
 ### Interactive Effects
+
 - Hover lift on cards and buttons
 - Ripple effect on button clicks
 - Smooth scroll between sections
@@ -461,27 +479,29 @@ Made with ❤️ by Harsh | BCA Student at Jagannath University
 - **Extra Small**: Below 480px
 - **Landscape**: Special handling for landscape orientation
 
-
-
 ## 🚀 Getting Started
 
 ### Installation
+
 1. Clone or download the project
 2. Ensure all files are in the correct directories
 3. Open `index.html` in a modern web browser
 
 ### Browser Support
+
 - Chrome/Edge: Latest versions
 - Firefox: Latest versions
 - Safari: Latest versions
 - Mobile browsers: iOS Safari, Chrome for Android
 
 ### No Build Process Required
+
 This is a pure HTML, CSS, and JavaScript project with no build tools needed. Just open and use!
 
 ## ⚙️ JavaScript Features
 
 ### Core Functionality
+
 - **Smooth Navigation**: Auto-scroll to sections with header offset
 - **Form Validation**: Real-time validation with visual feedback
 - **Typing Animation**: Dynamic typing effect using Typed.js
@@ -494,23 +514,21 @@ This is a pure HTML, CSS, and JavaScript project with no build tools needed. Jus
 ## 🎨 Customization
 
 ### CSS Variables (in style.css)
+
 ```css
 :root {
-    /* Primary Colors */
-    --primary-color: #6c5ce7;
-    --primary-dark: #5f3dc4;
-    --accent-color: #00b894;
-    
-    /* Spacing */
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition-base: 0.3s ease;
-    --transition-slow: 0.5s ease;
+  --primary-color: #6c5ce7;
+  --primary-dark: #5f3dc4;
+  --accent-color: #00b894;
+
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 ```
 
@@ -553,16 +571,19 @@ This is a pure HTML, CSS, and JavaScript project with no build tools needed. Jus
 ## 🐛 Troubleshooting
 
 ### Animations not working?
+
 - Check browser support (use modern browser)
 - Verify CSS files are loaded
 - Check browser DevTools console for errors
 
 ### Scroll effects not triggering?
+
 - Ensure scroll.js is loaded
 - Check if elements have correct data attributes
 - Verify JavaScript is enabled
 
 ### Mobile menu not opening?
+
 - Mobile menu toggle is prepared for future implementation
 - Currently uses responsive nav that reflows on smaller screens
 
@@ -580,33 +601,37 @@ This is a pure HTML, CSS, and JavaScript project with no build tools needed. Jus
 ## 📝 Customization
 
 ### Change Colors
+
 Edit CSS variables in `style.css` `:root` section
 
 ### Add New Sections
+
 1. Add HTML section with unique ID
 2. Add link to navigation
 3. Add matching CSS styling
 4. Add scroll animations if desired
 
 ### Modify Animations
+
 - Adjust timing: Change duration in keyframes
 - Change effects: Modify transform properties
 - Add new: Create new @keyframes rule
 
-## 📄 License
+## 📄License
 
 This project is open source and available under the MIT License.
 
 ## 👤 Author
 
-**Harsh Jangra**
+### Harsh Jangra
+
 - Frontend Developer
 - Focus on modern, responsive design
 - Building user-friendly web applications
 
 ## 📞 Contact
 
-- Email: harshjangra021@gmail.com
+- Email: [harshjangra021@gmail.com](mailto:harshjangra021@gmail.com)
 - Phone: +91 90502 93435
 - Location: Jhajjar, Haryana, India
 
